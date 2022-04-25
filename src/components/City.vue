@@ -1,12 +1,10 @@
 <template>
   <div class="cityComponent">
-    <!-- <div v-for="city for cities" :key="cities.id"> -->
       <p>  Ville : {{ name }} </p>
       <p>  Temps : {{ weather}} </p>
       <p>  Temperature : {{ temperature }} </p>
       <p>  Mis à jour : {{ timeSinceUpdate }} </p>
     </div>
-  <!-- </div> -->
 </template>
   
 <script>

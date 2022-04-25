@@ -1,5 +1,7 @@
 <template>
   <div id="CitiesList">
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
     <div v-for="city in cities" :key="city.id">
       <CityComponent
         :name="city.name"
