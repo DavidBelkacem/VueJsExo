@@ -1,20 +1,18 @@
 <template>
-  <div class="hello">
-    <div>{{ name }}</div>
-    <div>{{ weather }}</div>
-    <div>{{ temperature }}</div>
-    <div>{{ updatedAt }}</div>
+  <div id="HelloWorld">
+    <CityComponent 
+      :name="name"
+      :weather="weather"
+      :temperature="temperature"
+      :updatedAt="updatedAt"/>
   </div>
 </template>
 
 <script>
-  // import CityTest from './CityTest.vue'
+  import CityComponent from "./City.vue";
 
   export default {
     name: "HelloWorld",
-    props: {
-      msg: String,
-    },
     data() {
       return {
         name: "Ma ville", // nom de la ville
@@ -22,6 +20,9 @@
         temperature: 20.55, // température en °C
         updatedAt: new Date(), // date de dernière mise à jour
       }
+    },
+    components: {
+      CityComponent,
     },
   };
 </script>
